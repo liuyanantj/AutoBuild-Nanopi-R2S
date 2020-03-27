@@ -6,7 +6,7 @@
 # <https://github.com/tiantianxiaoxiaoxyz/AutoBuild-Nanopi-R2S/>
 #
 # Write by vipassana 2020/2/10
-# last update at 2020/2/15
+# last update at 2020/2/19
 name: NanoPi-R2s RK3328 OpenWrt Build
 
 on:  
@@ -15,14 +15,14 @@ on:
     branches: 
       - master
 
- schedule:
-     - cron: 0 20 * * *
-   release:
-     types: [published]
+# schedule:
+  #   - cron: 0 20 * * *
+  # release:
+  #   types: [published]
     
 #环境变量：SSH_ACTIONS设置为true则会在执行完Costom Configure File后显示一个SSH的链接，可用终端或者web登录到vps进行配置
 env:
-  SSH_ACTIONS: true
+  SSH_ACTIONS: false
   TZ: Asia/Shanghai
 
 jobs:
